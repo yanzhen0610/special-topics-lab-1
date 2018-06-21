@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-5KpNAytmiDxBanrkBv7mxkrUV1uggYCd+nLTGVig8i0ubJLVBFWQKXnGK5nR4kJF" crossorigin="anonymous">
+  <link href="./css/loading-animation.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <script>
+    $(function() {
+      $('#submit-btn').click(function() {
+        $('#f001').text('Field1: ' + $('#input-001').val());
+        $('#f002').text('Field2: ' + $('#input-002').val());
+        $('#f003').text('Field3: ' + $('#input-003').val());
+      });
+    })
+  </script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container mt-3 mb-3 mt-lg-5 mb-lg-5">
+    <div class="jumbotron row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+
+        <div>
+          <fieldset>
+            <legend>Legend</legend>
+
+            <p id="f001">Field1:??</p>
+            <p id="f002">Field1:??</p>
+            <p id="f003">Field1:??</p>
+
+            <div class="form-group">
+              <label class="col-form-label" for="inputDefault">Field1</label>
+              <input type="text" class="form-control" placeholder="Field1" id="input-001">
+            </div>
+
+            <div class="form-group">
+              <label class="col-form-label" for="inputDefault">Field2</label>
+              <input type="text" class="form-control" placeholder="Field2" id="input-002">
+            </div>
+
+            <div class="form-group">
+              <label class="col-form-label" for="inputDefault">Field3</label>
+              <input type="text" class="form-control" placeholder="Field3" id="input-003">
+            </div>
+
+            <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
+          </fieldset>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

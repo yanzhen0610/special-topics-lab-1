@@ -1,0 +1,45 @@
+{
+  "cod": "200",
+  "message": 0.0081,
+  "cnt": 1,
+  "list": [{
+    "dt": 1528837200,
+    "main": {
+      "temp": 299.55,
+      "temp_min": 298.847,
+      "temp_max": 299.55,
+      "pressure": 1007.58,
+      "sea_level": 1016.43,
+      "grnd_level": 1007.58,
+      "humidity": 100,
+      "temp_kf": 0.7
+    },
+    "weather": [{
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04n"
+    }],
+    "clouds": {
+      "all": 76
+    },
+    "wind": {
+      "speed": 5.5,
+      "deg": 127.505
+    },
+    "sys": {
+      "pod": "n"
+    },
+    "dt_txt": "2018-06-12 21:00:00"
+  }],
+  "city": {
+    "id": 1668341,
+    "name": "Taipei",
+    "coord": {
+      "lat": 25.0375,
+      "lon": 121.5637
+    },
+    "country": "TW",
+    "population": 7871900
+  }
+}

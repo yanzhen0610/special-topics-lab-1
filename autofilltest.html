@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <form id="form1" method="post">
+    <label for="username">Username:</label><br>
+    <input type="text" name="username" id="username" required autocomplete="username"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" id="password" required autocomplete="current-password"><br>
+    <input type="submit" id="submit">
+  </form>
+  <script>
+  $submit = $('#submit');
+  $submit.click(function() {
+    $.post("./autofilltest.html", $('form1').serialize()).done(function(data){
+      console.log('123');
+      // var tab = open("./autofilltest.html", "_self");
+    });
+  });
+  // window.onload = function(){
+  //   alert("try to access password:["+$('form1').serialize()+"]");
+  // };
+  // setTimeout(function(){
+  //   alert("js try to steal password:["+$('form1').serialize()+"]");
+  // }, 3000);
+  </script>
+</body>
+</html>

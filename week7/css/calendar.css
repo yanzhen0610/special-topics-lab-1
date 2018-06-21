@@ -1,0 +1,25 @@
+#container
+{
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+img
+{
+  width: 100%;
+}
+
+.fc-sat, .fc-sun
+{
+  color: red;
+}
+
+#calendar
+{
+  padding-top: 3em;
+}
+
+.bg
+{
+  border-radius: 0.5em;
+}

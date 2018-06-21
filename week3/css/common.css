@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+body
+{
+  font-family: sans-serif,'PingFang TC','Lantinghei TC','Microsoft YaHei','Noto Sans TC';
+  margin: 0;
+  position: relative;
+}
+
+main
+{
+  padding-top: 2em;
+  padding-bottom: 6em;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  padding: 0.5em 0;
+}
+
+li
+{
+  padding: 0.2em 0;
+}
+
+section
+{
+  padding: 0.5em 0;
+}
+
+#header
+{
+  background: #f2800d;
+  color: #FFF;
+  padding: 1em 0;
+}
+
+#navigator
+{
+  margin: 0.5em 3em;
+}
+
+#footer
+{
+  background: #f2800d;
+  color: #FFF;
+  padding: 1em 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.inner
+{
+  max-width: 38em;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.nav-link
+{
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0 0.5em;
+  display: inline-block;
+}
+
+.code
+{
+  font-family: monospace, 'Source Code Pro';
+}
